@@ -12,7 +12,22 @@ import java.util.Date;
  * @version 1.0.0
  */
 public class CommonUtils {
-
+	/**
+	 * 
+	 * @Description (将时间转为yyyy-MM-dd,HH:mm:ss格式)
+	 * @param date
+	 * @return
+	 */
+    public static String simpleFormatDateTime(Date date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss");
+        return dateFormat.format(date);
+    }
+    /**
+     * 
+     * @Description (将时间转为yyyy-MM-dd格式)
+     * @param date
+     * @return
+     */
     public static String simpleFormatDate(Date date) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         return dateFormat.format(date);
